@@ -163,7 +163,6 @@ const confirmPasswordEdit = document.querySelector('#confirm-password-edit');
 const editFullname = document.querySelector('#edit-fullname');
 const editRadio = document.querySelectorAll('.edit-gender');
 
-console.log(editRadio);
 
 editProfileBtn.addEventListener('click', () => {
     let errorCheck = 0;

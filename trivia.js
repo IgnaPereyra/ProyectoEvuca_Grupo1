@@ -68,24 +68,10 @@ $('#btn-trivia').click(function() {
         currentQuestion++;
         if (select() === quizCorrAns) {
             score++;
-            console.log(score);
         }
         if (currentQuestion < 10) {
             startQuiz();
         }else {
-            // if(score === 10) {
-            //     alert(`${score} puntos! Douuuuuu`);
-            // }else if(score >= 8) {
-            //     alert(`Buenardo, hiciste ${score} puntos, casi perfecto!`);
-            // }else if(score >= 6) {
-            //     alert(`Bien! hiciste ${score} puntos, seguí así`);
-            // }else if(score >= 4) {
-            //     alert(`${score} puntos, podrías mejorar la verdad`);
-            // }else if(score >= 2) {
-            //     alert(`Hiciste ${score} puntos, ponete las pilas pibe`);
-            // }else if(score >= 0) {
-            //     alert(`???????${score}?? Me estas jodiendo, no??`);
-            // }
             trivia.innerHTML = `<h2>Respondiste correctamente ${score}/10 preguntas!<h2><button class="trivia-btn" onClick="location.reload()">Otra vez!</button>`;
         }
     }
