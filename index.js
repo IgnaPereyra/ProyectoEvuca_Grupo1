@@ -271,4 +271,20 @@ const logOutBtn = document.querySelector('#log-out');
 
 logOutBtn.addEventListener('click', () => {
     localStorage.removeItem('USERDATA');
+});
+
+///////////////////////////////////////// send msg ////////////////////////////////////////////////////
+
+const contactForm = document.querySelector('#contact-us');
+const contactText = document.querySelector('#contact-text');
+
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    contactText.value = '';
+    swal({
+        title: "Mensaje enviado!",
+        text: "Gracias por tu comentario!",
+        icon: "success",
+        button: "Cerrar",
+    });
 })

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evuca Música</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
@@ -20,9 +21,9 @@
         <nav class="nav ">
             <a href="#" class="logo nav-link">iTunes</a>
             <ul class="nav-menu">
-                <li class="nav-menu-item"><a href="https://www.apple.com/la/music/" class="nav-menu-link nav-link">Nosotros</a></li>
+                <li class="nav-menu-item"><a href="https://www.apple.com/la/music/" target="_blank" class="nav-menu-link nav-link">Nosotros</a></li>
                 <li class="nav-menu-item"><a href="trivia.html" class="nav-menu-link nav-link">Trivia</a></li>
-                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Contacto</a></li>
+                <li class="nav-menu-item"><a href="#my-footer" class="nav-menu-link nav-link">Contacto</a></li>
             </ul>
             <div class="action">
                 <div class="profile" onClick="menuToggle()">
@@ -62,16 +63,46 @@
     <button id="close" class="btn-hidden">Cerrar</button>
 
     
+    <!-- Footer start -->
+        <footer id="my-footer">
+            <div class="main-content">
+            <div class="left box-footer">
+                <h2>Sobre nosotros</h2>
+                <div class="content-footer">
+                <p>Creado por: Ariadna Albornoz, Brian Milani, Carolina Piutrin e Ignacio Pereyra.</p>
+                <div class="social-footer">
+                    <a href="https://www.facebook.com/somosevuca" target="_blank"><span class="fab fa-facebook-f"></span></a>
+                    <a href="https://www.instagram.com/somosevuca/" target="_blank"><span class="fab fa-instagram"></span></a>
+                </div>
+                </div>
+            </div>
+            <div class="right box-footer">
+                <h2>Contacto</h2>
+                <div class="content-footer">
+                <form action="#" id="contact-us">
+                    <div class="msg-footer">
+                    <div class="text-footer">Mensaje *</div>
+                    <textarea rows="2" cols="25" id="contact-text" required></textarea>
+                    </div>
+                    <div class="btn-footer">
+                    <button type="submit">Enviar</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+            </div>
+            <div class="bottom">
+            <center>
+                <span class="credit">Creado por <a href="#">Evuca Grupo 1</a> | </span>
+                <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+            </center>
+            </div>
+        </footer>
     
-    <footer>
-        Derechos reservados &copy; 2021 <br>
-        Diseñado por: Ariadna Alvornoz, Carolina Piutrin, Ignacio Pereyra y Brian Milani. <br>
-        Email: musicaparaconctarte_02@gamil.com <br>
-        Mas info en: musicaparaconctarte.com.ar
-    </footer>
-    
+        <!-- Footer end -->
 
 
+        <!-- Modal start -->
 
     <div class="modal fade" id="viewProfileModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
@@ -160,7 +191,7 @@
         </div>
     </div>
 
-
+    <!-- Modal end -->
 
     <script src="index.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

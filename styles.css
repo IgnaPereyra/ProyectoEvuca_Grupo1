@@ -84,16 +84,6 @@
 
 }
 
-footer{
-    background: rgb(59, 62, 63);
-    margin: 0 auto;
-    border-radius: 0 0 20px 20px;
-    color: #fff;
-    text-align: center;
-    padding: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
 
 .box{
     position: absolute;
@@ -149,6 +139,7 @@ div p {
 
 .container {
     margin: 30px auto;
+    margin-bottom: 200px;
     padding: 50px;
     padding-left: 75px;
     width: 75%;
@@ -788,4 +779,160 @@ form .button-login input:hover{
 
 .tippy-box[data-theme~='gradient'] {
     background: linear-gradient(to right,#2c3e50d8, #2c3e50d8, #bdc3c7ce);
+}
+
+
+
+
+
+
+
+footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+}
+
+.main-content{
+    display: flex;
+}
+
+.main-content .box-footer{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box-footer h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box-footer .content-footer{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box-footer .content-footer:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.box-footer .content-footer:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #107fb3;
+    top: -10px;
+}
+
+.left .content-footer p{
+    text-align: justify;
+}
+
+.left .content-footer .social-footer{
+    margin: 20px 0 0 0;
+}
+
+.left .content-footer .social-footer a{
+    padding: 0 2px;
+}
+
+.left .content-footer .social-footer a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content-footer .social-footer a span:hover{
+    background: #107fb3;
+}
+
+
+.right form .text-footer{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #107fb388;
+}
+
+.right form .msg-footer{
+    margin-top: 10px;
+}
+
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 16px;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+    color: #ffffff;
+}
+
+.right form input:focus,
+.right form textarea:focus{
+    outline-color: #3498db;
+}
+
+.right form input{
+    height: 35px;
+}
+
+.right form .btn-footer{
+    margin-top: 10px;
+}
+
+.right form .btn-footer button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #107fb3;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+.right form .btn-footer button:hover{
+    background: #107fb388;
+}
+
+.bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+
+.bottom center span{
+    color: #656565;
+}
+.bottom center a{
+    color: #107fb3;
+    text-decoration: none;
+}
+.bottom center a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box-footer{
+        margin: 5px 0;
+    }
 }
