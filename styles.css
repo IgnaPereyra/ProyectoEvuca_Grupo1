@@ -139,7 +139,6 @@ div p {
 
 .container {
     margin: 30px auto;
-    margin-bottom: 200px;
     padding: 50px;
     padding-left: 75px;
     width: 75%;
@@ -583,6 +582,10 @@ form .category label .dot{
 
 form input[type="radio"]{
         display: none;
+}
+
+.gender-details input[type="radio"]{
+    display: none;
 }
 
 form .button-login{
