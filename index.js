@@ -39,7 +39,7 @@ loadUserInfo();
 
 ///////////////////////////////////////// api js ////////////////////////////////////////////////////
 
-function getContent(artist) {$.get(`https://itunes.apple.com/search?term=${artist}&entity=musicVideo&limit=40`, data => {
+function getContent(artist) {$.get(`https://itunes.apple.com/search?term=${artist}&entity=musicVideo&limit=20`, data => {
     const objJSON = JSON.parse(data);
     const itemsHTML = objJSON.results.map(item => {
         return `<div style="background-image: url(${item.artworkUrl100});" onclick="openVideo('${item.previewUrl}', '${item.artistName} - ${item.trackCensoredName.replace(/'/g," ").replace(/"/g, " ")}', '${item.artistViewUrl}', '${item.trackPrice}', '${item.currency}')" class="item"></div>`;
