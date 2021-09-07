@@ -610,7 +610,6 @@ form .button-login input{
     letter-spacing: 1px;
     cursor: pointer;
     background: linear-gradient(to left, #2c3e50d8, #bdc3c7ce);
-    transition: all 3s ease;
 }
 
 form .button-login input:hover{
