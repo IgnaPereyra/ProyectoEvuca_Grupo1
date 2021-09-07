@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <title>Log in</title>
+</head>
+<body id="body-login">
+    <div class="container-login">
+        <div class="title-login">Registration</div>
+        <div class="content-login">
+            <form id="login-form" action="indexnew.html" method="GET">
+                <div class="user-details">
+                    <div class="input-box-login">
+                        <span class="details-login">Nombre y apellido <img src="./Simbolos/question-mark-on-a-circular-black-background.png" id="fullname-tooltip" class="question-symbol"></span><span id="fullname-error" class="login-error"></span>
+                        <input type="text" id="login-fullname" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box-login">
+                        <span class="details-login">Usuario <img src="./Simbolos/question-mark-on-a-circular-black-background.png" id="username-tooltip" class="question-symbol"></span><span id="username-error" class="login-error"></span>
+                        <input type="text" id="login-username" placeholder="Enter your username" required>
+                    </div>
+                <div class="input-box-login">
+                    <span class="details-login">Email <img src="./Simbolos/question-mark-on-a-circular-black-background.png" id="email-tooltip" class="question-symbol"></span><span id="email-error" class="login-error"></span>
+                    <input type="text" id="login-email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box-login">
+                    <span class="details-login">Número de teléfono <img src="./Simbolos/question-mark-on-a-circular-black-background.png" id="phone-tooltip" class="question-symbol"></span><span id="phone-error" class="login-error"></span>
+                    <input type="text" id="login-phone" placeholder="Ej:01140198800" required>
+                </div>
+                <div class="input-box-login">
+                    <span class="details-login">Contraseña <img src="./Simbolos/question-mark-on-a-circular-black-background.png" id="password-tooltip" class="question-symbol"></span><span id="password-error" class="login-error"></span>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+                <div class="input-box-login">
+                    <span class="details-login">Confirmar contraseña</span>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Gender<span id="radio-error" class="login-error"></span></span>
+                <div class="category">
+                <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Hombre</span>
+                </label>
+                <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Mujer</span>
+                </label>
+                <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Otro</span>
+                </label>
+                </div>
+            </div>
+            <div class="button-login">
+                <input type="submit" value="Register">
+            </div>
+            </form>
+        </div>
+        </div>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="login.js"></script>
+</body>
+</html>
