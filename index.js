@@ -263,5 +263,12 @@ editProfileBtn.addEventListener('click', () => {
 
         loadUserInfo();
     }
+});
 
+///////////////////////////////////////// log out ////////////////////////////////////////////////////
+
+const logOutBtn = document.querySelector('#log-out');
+
+logOutBtn.addEventListener('click', () => {
+    localStorage.removeItem('USERDATA');
 })

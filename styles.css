@@ -97,7 +97,7 @@ footer{
 
 .box{
     position: absolute;
-    top: 70%;
+    top: 85%;
     left: 35%;
     bottom: 75%;
     transform: translate(-50%, -50%);
@@ -258,7 +258,7 @@ div p {
     align-items: center;
     justify-content: center;
     margin: 0;
-    background-image: url("https://w.wallhaven.cc/full/4d/wallhaven-4dedpj.jpg");
+    background-image: url('./Fotos/wallhaven-4dedpj.jpg');
     min-height: 100vh;
 }
 
@@ -736,10 +736,6 @@ form .button-login input:hover{
 #dot-3:checked ~ .category label .three{
         background: #9b59b6;
         border-color: #d9d9d9;
-}
-
-input[type="radio"]{
-        display: none;
 }
 
 .button-edit{
